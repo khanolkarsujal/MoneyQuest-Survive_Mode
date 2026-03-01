@@ -1,0 +1,85 @@
+🟢 SCREEN 1 — Landing
+Layout:
+
+--------------------------------
+|   MONEYQUEST                |
+|                              |
+|  “Will your money survive?” |
+|                              |
+|  [ Start Survival Mode ]    |
+|                              |
+--------------------------------
+
+🟢 SCREEN 2 — Setup Budget
+
+--------------------------------
+| Setup Your Month             |
+|                              |
+| Total Money:  [ ₹____ ]      |
+| Fixed Expenses: [ ₹____ ]    |
+|                              |
+| Days Remaining:  28          |
+|                              |
+| [ Calculate Survival ]       |
+--------------------------------
+When user clicks calculate:
+
+Below button show:
+
+Daily Safe Spend: ₹214
+
+🟢 SCREEN 3 — Dashboard
+--------------------------------
+|  Month Survival Dashboard    |
+--------------------------------
+|                              |
+|  DAILY SAFE SPEND            |
+|         ₹214                 |
+|                              |
+--------------------------------
+|  Survival Meter Bar          |
+|  [██████████░░░░░░]  78%     |
+|                              |
+--------------------------------
+|  Money will last: 23 days    |
+--------------------------------
+|                              |
+|   [ + Add Expense ]          |
+--------------------------------
+Important:
+The ₹214 must be big.
+That is the focus.
+
+🟢 SCREEN 4 — Add Expense Modal
+--------------------------------
+| Add Expense                  |
+|                              |
+| Amount: [ ₹____ ]            |
+| Category: [ Optional ]       |
+|                              |
+| [ Save ]                     |
+--------------------------------
+
+🟢 Overspending State (Very Important)
+--------------------------------
+| DAILY SAFE SPEND             |
+| ₹214                         |
+|                              |
+| Today Spent: ₹350            |
+| Over by: ₹136 ⚠              |
+--------------------------------
+| Survival Meter: 42% (Red)    |
+--------------------------------
+| Money will last: 16 days     |
+--------------------------------
+
+🟢 Optional Screen — Weekly Summary
+--------------------------------
+| Weekly Reality Check         |
+--------------------------------
+| Total Spent: ₹1800           |
+| Daily Avg: ₹257              |
+| Safe Avg: ₹214               |
+--------------------------------
+| You are overspending ⚠       |
+--------------------------------
