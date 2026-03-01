@@ -24,9 +24,21 @@ if "Available Money" in st.session_state and "Daily Safe Spend" in st.session_st
     current_daily_spend = st.session_state["Current Daily Spend"]
 
 
+
+
     if current_daily_spend > 0 and days_remaining > 0:
         survival_days = available / current_daily_spend
         survival_percentage = round((survival_days / days_remaining) * 100, 2)
     
     st.progress(min(int(survival_percentage), 100))
     st.write(" Survival percentage", survival_percentage,"%")
+
+
+    Money_Lasting_Days = available // current_daily_spend if current_daily_spend > 0 else 0
+    st.metric(f"Money will last", f"{Money_Lasting_Days} days")
+
+if st.button(" + Add Expense "):
+    st.switch_page("pages/Expense.py")
+
+
+    
