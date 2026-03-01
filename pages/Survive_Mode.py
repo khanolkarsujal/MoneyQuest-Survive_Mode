@@ -43,3 +43,5 @@ if st.button("Calculate Survival"):
 
         st.write('You can spend ₹', calculate_survival, 'per day to survive.')
 
+if st.button("View Dashboard"):
+    st.switch_page("pages/Dashboard.py")
