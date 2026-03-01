@@ -12,7 +12,8 @@ options = ["", "Food", "Transport", "Entertainment", "Utilities", "Other Expense
 category = st.selectbox("Category (Optional)", options)
 
 if st.button("Save"):
-    if os.path.exists(file_path):
+    # Check if file exists and is not empty
+    if os.path.exists(file_path) and os.path.getsize(file_path) > 0:
         df = pd.read_csv(file_path)
     else:
         df = pd.DataFrame(columns=["Amount", "Category", "Timestamp"])
@@ -22,6 +23,7 @@ if st.button("Save"):
         "Category": category,
         "Timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     }
+
     df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
     df.to_csv(file_path, index=False)
     st.success("Saved successfully!")
